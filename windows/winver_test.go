@@ -15,4 +15,8 @@ func TestGetWinVer(t *testing.T) {
 	if len(winVer.OSName) <= 0 {
 		t.Error("OSName should not be empty")
 	}
+
+	t.Logf("OSName: %s", winVer.OSName)
+	t.Logf("Version: %s", winVer.Version)
+	t.Logf("Release: %s", winVer.Release)
 }
